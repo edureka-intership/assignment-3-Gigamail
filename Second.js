@@ -16,14 +16,13 @@ const orderData = {
     console.log("Total number of order proportions =",count);
     // c. Calculate the percentage of each proportion in below format:
     let con=1;
-    let c=(orderData["Below 500"],orderData["500-1000"],orderData["1000-1500"],orderData["1500-2000"],orderData["Above 2000"]);
     for(list in orderData)
     {
         const arr=({
             'id' : con++,
             'resturent': "punjab tadka",
             'order': list,
-            'order percentage':((c/199)*100).toFixed(2),
+            'order percentage':((`${orderData[list]}`/199)*100).toFixed(2),
         })
         console.log(arr);
     }
