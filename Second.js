@@ -18,11 +18,11 @@ const orderData = {
     let con=1;
     for(list in orderData)
     {
-        const arr=({
+        const arr={
             'id' : con++,
             'resturent': "punjab tadka",
             'order': list,
             'order percentage':((`${orderData[list]}`/199)*100).toFixed(2),
-        })
+        }
         console.log(arr);
     }
